@@ -23,7 +23,7 @@
 #' @references Santacatterina, M., Robust weights that optimally balance confounders for estimating the effect of binary and continuous treatments with time-to-event data, url: TBA
 #' @examples
 #' \dontrun{
-#'set.seed(4)
+#'set.seed(12345)
 #'
 #'########################################################################
 #'# Generate Covariates/Counfounders

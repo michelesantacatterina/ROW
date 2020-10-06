@@ -46,7 +46,7 @@ and \href{https://www.gurobi.com/downloads/eula-academic-online-course-license-r
 }
 \examples{
 \dontrun{
-set.seed(4)
+set.seed(12345)
 
 ########################################################################
 # Generate Covariates/Counfounders
