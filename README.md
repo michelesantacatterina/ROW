@@ -1,8 +1,8 @@
-#ROW: an R package for obtaining Robust Orthoghonality Weights - a set of weights that optimally balance confounders for estimating the effect of binary and continuous treatments
+# ROW: an R package for obtaining Robust Orthoghonality Weights - a set of weights that optimally balance confounders for estimating the effect of binary and continuous treatments
 
 This repository contains the R code to obtain ROW. Citation.
 
-##How to install the package
+## How to install the package
 
 1. Install devtools from CRAN
 
@@ -20,17 +20,17 @@ library(devtools)
 install_github("michelesantacatterina/ROW")
 ```
 
-##What solver should you use?
+## What solver should you use?
 
 ROW are obtained by solving a quadratic constrained optimization problem. Several solvers can be used to solve the optimization problem. In this package we provide the following options: Gurobi, quadprog, Dykstra and ipop. We suggest to use Gurobi. Please find detailed instruction on how to install the R interface of Gurobi [here](https://cran.r-project.org/web/packages/prioritizr/vignettes/gurobi_installation.html). Gurobi offers free academic licenses ([visit the solver website](https://www.gurobi.com/downloads/end-user-license-agreement-academic/)). The following Figure shows the computational time (computed using the system.time function in R) for solving the same optimization problem with n=50, 200, 1,000 and 5,000 across the four solvers. 
 
 ![](images/qp_solvers.png?raw=true)
 
-##Examples
+## Examples
 
 We provide some examples on how to estimate hazard ratios and ATE of binary and continuous treatments.
 
-###Hazard Ratio - Binary Treatment
+### Hazard Ratio - Binary Treatment
 
 ```
 set.seed(4)
@@ -112,7 +112,7 @@ summary(modelw)
 summary(coxph(Surv(time, status) ~ Tr, data=data))
 ```
 
-###Hazard Ratio - Continuous Treatment
+### Hazard Ratio - Continuous Treatment
 
 ```
 ########################################################################
@@ -193,7 +193,7 @@ summary(coxph(Surv(time, status) ~ Tr, data=data))
 ```
 
 
-###Average Treatment Effect - Binary Treatment
+### Average Treatment Effect - Binary Treatment
 
 ```
 ########################################################################
@@ -262,7 +262,7 @@ fitn$coef[2]
 sqrt(diag(sandwich(fitn)))[2]
 ```
 
-###Average Treatment Effect - Continuous Treatment
+### Effect of a continuous treatment
 
 ```
 ########################################################################
