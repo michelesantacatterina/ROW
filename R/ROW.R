@@ -82,7 +82,7 @@
 #'library(cobalt)
 #'lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
 #'                               s.d.denom="pooled"),colors = c("grey", "black"),var.order = "unadjusted",
-#'                               shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+#'                               shapes=c("circle","square"),stars = "raw",position="bottom", abs=TRUE)
 #'
 #'lprow
 #'
@@ -133,7 +133,7 @@
 #'library(cobalt)
 #'lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
 #'                               s.d.denom="all"),colors = c("grey", "black"),var.order = "unadjusted",
-#'                               shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+#'                               shapes=c("circle","square"),stars = "raw",position="bottom", abs=TRUE)
 #'
 #'lprow
 #'
@@ -185,7 +185,7 @@
 #'library(cobalt)
 #'lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
 #'                               s.d.denom="pooled"),colors = c("grey", "black"),var.order = "unadjusted",
-#'                               shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+#'                               shapes=c("circle","square"),stars = "raw",position="bottom", abs=TRUE)
 #'
 #'lprow
 #'
@@ -226,7 +226,7 @@
 #'library(cobalt)
 #'lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
 #'                               s.d.denom="all"),colors = c("grey", "black"),var.order = "unadjusted",
-#'                               shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+#'                               shapes=c("circle","square"),stars = "raw",position="bottom", abs=TRUE)
 #'
 #'lprow
 #'
