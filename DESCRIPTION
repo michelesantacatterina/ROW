@@ -1,0 +1,15 @@
+Package: ROW
+Type: Package
+Title: Robust Orthogonality Weights for balancing covariates for estimating the effect of binary and continuous treatments
+Version: 0.1.0
+Authors@R: c(
+  person("Michele", "Santacatterina", , "msanta@gwu.edu", c("aut", "cre")))
+Author: Michele Santacatterina
+Maintainer: Michele Santacatterina <msanta@gwu.edu>
+Description: Estimates weights that minimize sample variance while constraining the sample correlation between covariates and treatment
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: quadprog, kernlab, Dykstra
+Suggests: gurobi
+RoxygenNote: 7.1.0
