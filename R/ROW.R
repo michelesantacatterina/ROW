@@ -12,7 +12,7 @@
 #' @param intervention binary or continuous intervention/treatment/exposure.
 #' @param confounders a matrix containing all confounders. Each column represents a confounder.
 #' @param delta upper bound for the absolute value of the sample correlation between treatment and confounders. Default \code{delta=0.01}
-#' @param tol lower bound for the weights, \i.e., weights must be positive. Default \code{tol=1e-08}
+#' @param tol lower bound for the weights, i.e., weights must be positive. Default \code{tol=1e-08}
 #' @param solver the solver used to obtain the weights. Choices are between \code{gurobi} (default), \code{quadprog}, \code{Dykstra}, and \code{ipop}.
 #' @param Presolve presolve parameter for \code{gurobi} optimizer. More info \href{https://www.gurobi.com/documentation/8.1/refman/presolve.html}{here}. Default \code{Presolve=2} - aggressive.
 #' @param OutputFlag enables or disables \code{gurobi} solver output. More info \href{https://www.gurobi.com/documentation/8.1/refman/outoutflag.html}{here}. Default \code{OutputFlag=0}.

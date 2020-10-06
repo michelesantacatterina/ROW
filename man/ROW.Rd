@@ -21,9 +21,9 @@ ROW(
 
 \item{delta}{upper bound for the absolute value of the sample correlation between treatment and confounders. Default \code{delta=0.01}}
 
-\item{tol}{lower bound for the weights, \i.e., weights must be positive. Default \code{tol=1e-08}}
+\item{tol}{lower bound for the weights, i.e., weights must be positive. Default \code{tol=1e-08}}
 
-\item{solver}{the solver used to obtain the weights. Choices are between \code{gurobi} (default) and \code{quadprog}.}
+\item{solver}{the solver used to obtain the weights. Choices are between \code{gurobi} (default), \code{quadprog}, \code{Dykstra}, and \code{ipop}.}
 
 \item{Presolve}{presolve parameter for \code{gurobi} optimizer. More info \href{https://www.gurobi.com/documentation/8.1/refman/presolve.html}{here}. Default \code{Presolve=2} - aggressive.}
 
