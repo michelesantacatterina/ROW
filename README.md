@@ -33,7 +33,7 @@ We provide some examples on how to estimate hazard ratios and ATE of binary and 
 ### Hazard Ratio - Binary Treatment
 
 ```
-set.seed(4)
+set.seed(12345)
 
 ########################################################################
 # Generate Covariates/Counfounders
@@ -92,7 +92,7 @@ summary(row$weights*n) # the weights sum up to 1
 library(cobalt)
 lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
                               s.d.denom="pooled"),colors = c("grey", "black"),var.order = "unadjusted",
-                              shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+                              shapes=c("circle","square"),stars = "raw", position="bottom", abs=TRUE)
 
 lprow
 
@@ -171,7 +171,7 @@ summary(row$weights*n) # the weights sum up to 1
 library(cobalt)
 lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
                               s.d.denom="all"),colors = c("grey", "black"),var.order = "unadjusted",
-                              shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+                              shapes=c("circle","square"),stars = "raw", position="bottom", abs=TRUE)
 
 lprow
 
@@ -240,7 +240,7 @@ summary(row$weights*n) # the weights sum up to 1
 library(cobalt)
 lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
                               s.d.denom="pooled"),colors = c("grey", "black"),var.order = "unadjusted",
-                              shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+                              shapes=c("circle","square"),stars = "raw", position="bottom", abs=TRUE)
 
 lprow
 
@@ -307,7 +307,7 @@ summary(row$weights*n) # the weights sum up to 1
 library(cobalt)
 lprow     <- love.plot(bal.tab(Tr~X,weights=row$weights,method="weighting",
                               s.d.denom="all"),colors = c("grey", "black"),var.order = "unadjusted",
-                              shapes=c("circle","square"),stars = "raw", position=1, abs=TRUE)
+                              shapes=c("circle","square"),stars = "raw", position="bottom", abs=TRUE)
 
 lprow
 
