@@ -1,6 +1,7 @@
 # ROW: an R package for obtaining Robust Orthoghonality Weights - a set of weights that optimally balance confounders for estimating the effect of binary and continuous treatments
 
-This repository contains the R code to obtain ROW. Citation.
+This repository contains the R code to obtain Robust Orthoghonality Weights (ROW) as introduced in
+Santacatterina, M. *Robust weights that optimally balance confounders for estimating the effect of binary and continuous treatments with time-to-event data.* [https://arxiv.org/pdf/2010.07695.pdf](https://arxiv.org/pdf/2010.07695.pdf)
 
 ## How to install the package
 
